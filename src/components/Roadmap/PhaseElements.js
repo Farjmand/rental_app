@@ -1,25 +1,24 @@
 import styled from "styled-components";
-import PhaseOne from "../../assets/images/Vector.png";
-import AstronautImage from "../../assets/images/AstronautImage.png";
+import PolygonOne from "../../assets/images/Ellipse1.png";
+import PolygonTwo from "../../assets/images/Ellipse7.png";
+import PolygonThree from "../../assets/images/Ellipse8.png";
 
 
 
+export const PhasesContainer = styled.div`
 
-
-export const CategoryContainer = styled.div`
-
-  background: #ffffff;
+  background: linear-gradient(180deg, #009B76 0%, rgba(255, 255, 255, 0) 100%);
   padding-top: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   padding-bottom: 10px;
  
 
   @media screen and (max-width: 768px) {
-    background-position: center center;
-    background-size: cover;
+
     height: 100vh;
     width: 100vw;
     float: left;
@@ -30,15 +29,16 @@ export const CategoryContainer = styled.div`
   }
 `;
 
-export const CategoryWrapper = styled.div`
+export const PhasesWrapper = styled.div`
   max-width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  grid-gap: 10%;
+  grid-gap: 40px;
   padding: 0 50px;
-  
+ 
+
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
   }
@@ -50,14 +50,18 @@ export const CategoryWrapper = styled.div`
 `;
 
 
-export const ImageColumn = styled.div`
- 
+export const PhasesCard1 = styled.div`
+  background-image: url(${PolygonOne});
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: left;
-  padding: 35px;
+  align-items: center;
+  padding: 30px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
 
   &:hover {
@@ -66,31 +70,31 @@ export const ImageColumn = styled.div`
     cursor: pointer;
   }
 `;
-export const CategoryImage = styled.img`
+export const PhasesCard2 = styled.div`
+  background-image: url(${PolygonTwo});
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  width: 163.63px;
-  height: 102.14px;
-  left: 638px;
-  top: 1194px;
-  
-  object-fit: contain;
 
-  cursor: pointer;
-  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+  padding: 50px;
+  &:hover {
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
 `;
-export const Icons = styled.img`
-  display: flex;
-  align-items: center;
-  max-height: 150px;
-  max-width: 150px;
-  object-fit: contain;
-
-  cursor: pointer;
-  margin-bottom: 10px;
-`;
-export const TextColumn = styled.div`
- 
+export const PhasesCard3 = styled.div`
+  background:url(${PolygonThree});
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -109,20 +113,23 @@ export const TextColumn = styled.div`
 
 
 
-export const Title = styled.h1`
-  font-size: 48px;
-  color: rgba(0, 20, 197, 1);
+export const PhasesH1 = styled.h1`
+  font-size: 4rem;
+  color: #fff;
   margin-bottom: 64px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 96px;
-  font-family:'Montserrat';
 
   @media screen and (max-width: 480px) {
     font-size: 2rem;
   }
 `;
 
-
+export const WholePhaseIcon = styled.img`
+  width: 100%;
+  display: flex;
+  align-items: center;
+`;
 export const TextWrapper = styled.div`
 
   align-items: center;
@@ -134,6 +141,7 @@ export const CardHeading = styled.p`
     font-weight:600;
     text-align: center;
     color: #ffffff;
+    font-family: 'Gruppo';
 `;
 
 export const Listing = styled.li`

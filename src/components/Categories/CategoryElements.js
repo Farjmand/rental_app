@@ -1,22 +1,21 @@
 import styled from "styled-components";
 import PhaseOne from "../../assets/images/Vector.png";
-import AstronautImage from "../../assets/images/AstronautImage.png";
-import GraphicsBusiness from "../../assets/images/GraphicsBusiness.png";
 
 
-export const TalentContainer = styled.div`
 
-background-image: url(${GraphicsBusiness});
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+
+
+
+export const CategoryContainer = styled.div`
+
+  background: #ffffff;
   padding-top: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-bottom: 10px;
-
+ 
 
   @media screen and (max-width: 768px) {
     background-position: center center;
@@ -31,13 +30,13 @@ background-image: url(${GraphicsBusiness});
   }
 `;
 
-export const TalentWrapper = styled.div`
+export const CategoryWrapper = styled.div`
   max-width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  grid-gap: 40px;
+  grid-gap: 10%;
   padding: 0 50px;
   
   @media screen and (max-width: 1000px) {
@@ -57,9 +56,8 @@ export const ImageColumn = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: left;
   padding: 35px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
 
   &:hover {
@@ -68,7 +66,29 @@ export const ImageColumn = styled.div`
     cursor: pointer;
   }
 `;
+export const CategoryImage = styled.img`
+  display: flex;
+  align-items: center;
+  width: 163.63px;
+  height: 102.14px;
+  left: 638px;
+  top: 1194px;
+  
+  object-fit: contain;
 
+  cursor: pointer;
+  margin-bottom: 10px;
+`;
+export const Icons = styled.img`
+  display: flex;
+  align-items: center;
+  max-height: 150px;
+  max-width: 150px;
+  object-fit: contain;
+
+  cursor: pointer;
+  margin-bottom: 10px;
+`;
 export const TextColumn = styled.div`
  
   width: 100%;
@@ -90,11 +110,12 @@ export const TextColumn = styled.div`
 
 
 export const Title = styled.h1`
-  font-size: 4rem;
-  color: #fff;
+  font-size: 48px;
+  color: rgba(0, 20, 197, 1);
   margin-bottom: 64px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 96px;
+  font-family:'Montserrat';
 
   @media screen and (max-width: 480px) {
     font-size: 2rem;
@@ -115,37 +136,11 @@ export const CardHeading = styled.p`
     color: #ffffff;
 `;
 
-
-export const BusinessListing = styled.ul`
-list-style: none;
-padding-left: 0;
-float: left;
-margin-top: 15px;
-margin-right: 50px;
-`;
 export const Listing = styled.li`
+    font-size: 22px;
+    line-height: 38.5px;
+    color: #ffffff;
+    font-family: 'Jost';
    
-    text-decoration: None;
-`;
-export const Icons = styled.img`
-  display: flex;
-  align-items: center;
-  max-height: 50vh;
-  max-width: 25vw;
-  object-fit: contain;
-  display:inline-block;
-  cursor: pointer;
-  margin-bottom: 10px;
-`;
-Listing.Heading = styled.h3`
-font-family: 'Sora';
-font-size: 22px;
-color: #ffffff;
-`;
-Listing.Text = styled.p`
-  float:right;
-  font-size: 17px;
-  line-height: 38.5px;
-  color: #ffffff;
-  font-family: 'Jost';
+
 `;

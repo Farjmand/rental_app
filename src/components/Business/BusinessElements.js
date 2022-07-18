@@ -1,23 +1,26 @@
 import styled from "styled-components";
-import PolygonOne from "../../assets/images/Polygon1.png";
-import PolygonTwo from "../../assets/images/Polygon2.png";
-import PolygonThree from "../../assets/images/Polygon3.png";
+import PhaseOne from "../../assets/images/Vector.png";
+
+import GraphicsBusiness from "../../assets/images/GraphicsBusiness.png";
 
 
+export const TalentContainer = styled.div`
 
-export const PhasesContainer = styled.div`
-
+background-image: url(${GraphicsBusiness});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   padding-top: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   padding-bottom: 10px;
- 
+
 
   @media screen and (max-width: 768px) {
-
+    background-position: center center;
+    background-size: cover;
     height: 100vh;
     width: 100vw;
     float: left;
@@ -28,7 +31,7 @@ export const PhasesContainer = styled.div`
   }
 `;
 
-export const PhasesWrapper = styled.div`
+export const TalentWrapper = styled.div`
   max-width: 100%;
   margin: 0 auto;
   display: grid;
@@ -36,8 +39,7 @@ export const PhasesWrapper = styled.div`
   align-items: center;
   grid-gap: 40px;
   padding: 0 50px;
- 
-
+  
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
   }
@@ -49,17 +51,14 @@ export const PhasesWrapper = styled.div`
 `;
 
 
-export const PhasesCard1 = styled.div`
-  background-image: url(${PolygonOne});
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+export const ImageColumn = styled.div`
+ 
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 30px;
+  padding: 35px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
 
@@ -69,31 +68,9 @@ export const PhasesCard1 = styled.div`
     cursor: pointer;
   }
 `;
-export const PhasesCard2 = styled.div`
-  background-image: url(${PolygonTwo});
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
 
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  transition: all 0.2s ease-in-out;
-  padding: 50px;
-  &:hover {
-    transform: scale(1.02);
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-  }
-`;
-export const PhasesCard3 = styled.div`
-  background:url(${PolygonThree});
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+export const TextColumn = styled.div`
+ 
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -112,7 +89,7 @@ export const PhasesCard3 = styled.div`
 
 
 
-export const PhasesH1 = styled.h1`
+export const Title = styled.h1`
   font-size: 4rem;
   color: #fff;
   margin-bottom: 64px;
@@ -124,11 +101,7 @@ export const PhasesH1 = styled.h1`
   }
 `;
 
-export const WholePhaseIcon = styled.img`
-  width: 100%;
-  display: flex;
-  align-items: center;
-`;
+
 export const TextWrapper = styled.div`
 
   align-items: center;
@@ -142,11 +115,37 @@ export const CardHeading = styled.p`
     color: #ffffff;
 `;
 
-export const Listing = styled.li`
-    font-size: 22px;
-    line-height: 38.5px;
-    color: #ffffff;
-    font-family: 'Jost';
-   
 
+export const BusinessListing = styled.ul`
+list-style: none;
+padding-left: 0;
+float: left;
+margin-top: 15px;
+margin-right: 50px;
+`;
+export const Listing = styled.li`
+   
+    text-decoration: None;
+`;
+export const Icons = styled.img`
+  display: flex;
+  align-items: center;
+  max-height: 50vh;
+  max-width: 25vw;
+  object-fit: contain;
+  display:inline-block;
+  cursor: pointer;
+  margin-bottom: 10px;
+`;
+Listing.Heading = styled.h3`
+font-family: 'Sora';
+font-size: 22px;
+color: #ffffff;
+`;
+Listing.Text = styled.p`
+  float:right;
+  font-size: 17px;
+  line-height: 38.5px;
+  color: #ffffff;
+  font-family: 'Jost';
 `;

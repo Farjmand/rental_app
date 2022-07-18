@@ -21,6 +21,7 @@ function App() {
       </div>
       <Categories />
       <Roadmap />
+    <Footer />
     </Router>
   );
 }
