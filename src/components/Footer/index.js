@@ -10,14 +10,14 @@ import {
 } from "./FooterElements";
 import { SmallButton } from '../elements/SmallButton';
 import { Button, BtnWrap } from "../elements/Button2";
-import Logo from "../images/Logo.png";
+import Logo from "../../assets/Logo.png";
 import { LogoIcon } from "../LogoIcon";
-import Img from "../../assets/images/Moon_Footer.svg";
+
 
 const Footer = () => {
   return (
-    <FooterContainer src={Img}>
-      {/* <FooterBg src={Img}></FooterBg> */}
+    <FooterContainer>
+    
       <FooterWrap>
         <FooterLinksContainer>
           <LogoIcon src={Logo}></LogoIcon>

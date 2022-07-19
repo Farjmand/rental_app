@@ -15,7 +15,7 @@ export const PhasesContainer = styled.div`
 
   color: white;
   padding-bottom: 10px;
-  height: 200vh;
+  height: 100vh;
   @media screen and (max-width: 768px) {
 
     height: 100vh;

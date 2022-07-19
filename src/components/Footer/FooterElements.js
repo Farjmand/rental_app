@@ -5,10 +5,7 @@ import Moon_Footer from "../../assets/images/Moon_Footer.svg";
 
 export const FooterContainer = styled.footer`
   
-  background-image: url(${Moon_Footer});
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
+  background: rgba(32, 4, 146, 1);
   display: flex;
   @media screen and (max-width: 768px) {
     background-position: center center;
@@ -69,6 +66,7 @@ export const FooterLinkTitle = styled(Link)`
   text-decoration: none;
   margin-bottom: 0.5rem;
   font-size: 14px;
+  font-family: 'Gruppo';
   &:hover {
     color: #0B1686;
     transition: 0.3s ease-out;
