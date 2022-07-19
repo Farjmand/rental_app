@@ -50,7 +50,7 @@ Header.Logo = styled(Link)`
 `;
 
 Header.Logo.Image = styled.img`
-	width: 100%;
+	width:70px;
 
 `;
 

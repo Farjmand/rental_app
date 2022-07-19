@@ -2,7 +2,7 @@ import React from 'react';
 import { SmallButton } from './elements/SmallButton';
 // import { Button } from './elements/Button2';
 import { Header } from './styled/NavBar.styled';
-import Logo from '../assets/RNT.png';
+import Logo from '../assets/Logo.png';
 
 export function Nav() {
 	return (

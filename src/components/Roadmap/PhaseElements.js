@@ -1,22 +1,21 @@
 import styled from "styled-components";
-import PolygonOne from "../../assets/images/Ellipse1.png";
-import PolygonTwo from "../../assets/images/Ellipse7.png";
-import PolygonThree from "../../assets/images/Ellipse8.png";
+import EllipseOne from "../../assets/images/Ellipse7.png";
+import EllipseTwo from "../../assets/images/Ellipse2.png";
+import EllipseThree from "../../assets/images/Ellipse8.png";
+
 
 
 
 export const PhasesContainer = styled.div`
 
-  background: linear-gradient(180deg, #009B76 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #009B76 100% );
   padding-top: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
   align-items: center;
 
+  color: white;
   padding-bottom: 10px;
- 
-
+  height: 200vh;
   @media screen and (max-width: 768px) {
 
     height: 100vh;
@@ -29,15 +28,15 @@ export const PhasesContainer = styled.div`
   }
 `;
 
-export const PhasesWrapper = styled.div`
+export const Grid = styled.div`
   max-width: 100%;
   margin: 0 auto;
-  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  gap: 10rem;
+  padding: 0.25rem;
   align-items: center;
-  grid-gap: 40px;
-  padding: 0 50px;
- 
+  justify-content: center;
 
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
@@ -50,18 +49,15 @@ export const PhasesWrapper = styled.div`
 `;
 
 
-export const PhasesCard1 = styled.div`
-  background-image: url(${PolygonOne});
+export const Column1 = styled.div`
+  background-image: url(${EllipseOne});
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  padding: 1rem;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 30px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  height: 100%;
+
   transition: all 0.2s ease-in-out;
 
   &:hover {
@@ -70,38 +66,31 @@ export const PhasesCard1 = styled.div`
     cursor: pointer;
   }
 `;
-export const PhasesCard2 = styled.div`
-  background-image: url(${PolygonTwo});
+export const Column2 = styled.div`
+  background-image: url(${EllipseTwo});
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  padding: 5rem;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  height: 100%;
 
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
-  padding: 50px;
+ 
   &:hover {
     transform: scale(1.02);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
   }
 `;
-export const PhasesCard3 = styled.div`
-  background:url(${PolygonThree});
+export const Column3 = styled.div`
+  background:url(${EllipseThree});
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  padding: 1rem;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 50px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  height: 100%;
   transition: all 0.2s ease-in-out;
 
   &:hover {
@@ -135,9 +124,24 @@ export const TextWrapper = styled.div`
   align-items: center;
   padding: 50px 20px 30px 35px;
 `;
+
+export const Title = styled.h1`
+margin-top: 15px;
+  font-size: 40px;
+  color: #000000;
+  margin-bottom: 64px;
+  font-weight: 400;
+  line-height: 48.47px;
+  font-family:'Gruppo';
+  text-align:center;
+
+  @media screen and (max-width: 480px) {
+    font-size: 2rem;
+  }
+`;
 export const CardHeading = styled.p`
-    font-size: 42px;
-    line-height: 53.59px;
+    font-size: 25px;
+    line-height: 40px;
     font-weight:600;
     text-align: center;
     color: #ffffff;
