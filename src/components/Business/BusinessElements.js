@@ -4,7 +4,7 @@ import PhaseOne from "../../assets/images/Vector.png";
 import GraphicsBusiness from "../../assets/images/GraphicsBusiness.png";
 
 
-export const TalentContainer = styled.div`
+export const BusinessContainer = styled.div`
 
 background-image: url(${GraphicsBusiness});
   background-size: cover;

@@ -15,7 +15,7 @@ import {
 
 const Category = () => {
   return (
-    <PhasesContainer>
+    <PhasesContainer id = "roadmap">
       <Title> LETS RENT EVERYTHING IN <br/>
 DECENTRIALIZED WORLD </Title>
     

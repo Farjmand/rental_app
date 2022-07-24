@@ -41,7 +41,7 @@ const Footer = () => {
           </FooterLinksWrapper>
           <BtnWrap>
           <SmallButton to='https://discord.com/' target='_blank'>
-								<SmallButton.text> Join our Community</SmallButton.text>
+								<SmallButton.Text> Join our Community</SmallButton.Text>
 								</SmallButton>
           </BtnWrap>
         </FooterLinksContainer>

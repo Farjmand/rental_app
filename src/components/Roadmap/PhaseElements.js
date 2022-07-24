@@ -104,7 +104,7 @@ export const Column3 = styled.div`
 
 export const PhasesH1 = styled.h1`
   font-size: 4rem;
-  color: #fff;
+  color: #000;
   margin-bottom: 64px;
   font-weight: 700;
   line-height: 96px;
@@ -144,7 +144,7 @@ export const CardHeading = styled.p`
     line-height: 40px;
     font-weight:600;
     text-align: center;
-    color: #ffffff;
+    color: #000;
     font-family: 'Gruppo';
 `;
 

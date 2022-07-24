@@ -28,7 +28,7 @@ export const SmallButton = styled(Link)`
   flex-grow: 0;
 `;
 
-SmallButton.text = styled.p`
+SmallButton.Text = styled.p`
   /* Join our Community */
   height: 23px;
   font-family: "Montserrat";

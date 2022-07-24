@@ -21,7 +21,7 @@ import Icon6 from "../../assets/images/icons/Icon12.png";
 
 const Category = () => {
   return (
-    <CategoryContainer>
+    <CategoryContainer id = "category">
       <Title> FEATURED CATEGORIES </Title>
       {/* <WholePhaseIcon src={WholePhase} /> */}
       <CategoryWrapper>

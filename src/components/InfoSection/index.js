@@ -4,7 +4,7 @@ import { AboutContainer, AboutH1, AboutH2, AboutWrapper } from "./InfoElements";
 
 const About = () => {
   return (
-    <AboutContainer>
+    <AboutContainer id="about">
       <AboutH1>About Us</AboutH1>
    
         <AboutWrapper>

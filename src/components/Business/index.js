@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  TalentContainer,
+  BusinessContainer,
   TalentWrapper,
   Title,
   ImageColumn,
@@ -16,7 +16,7 @@ import flag from "../../assets/images/icons/flag.png";
 import support from "../../assets/images/icons/support.png";
 const Business = () => {
   return (
-    <TalentContainer>
+    <BusinessContainer id = "business">
       <Title>Business</Title>
       {/* <WholePhaseIcon src={WholePhase} /> */}
       <TalentWrapper>
@@ -59,7 +59,7 @@ const Business = () => {
           </TextWrapper>
         </TextColumn>
       </TalentWrapper>
-    </TalentContainer>
+    </BusinessContainer>
   );
 };
 
